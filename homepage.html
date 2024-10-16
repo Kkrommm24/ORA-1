@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Course Operation Information</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+    .w3-sidebar {
+      z-index: 3;
+      width: 250px;
+      top: 43px;
+      bottom: 0;
+      height: inherit;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-theme-l1"><i class="fa fa-book" style="font-size:24px;"></i></a>
+    <a href="#course_start_info" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Thông tin khai giảng</a>
+    <a href="#seminar_info" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Thông tin semina</a>
+    <a href="#company_info" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Thông tin công ty quan tâm</a>
+  </div>
+</div>
+
+<!-- Main content -->
+<div class="w3-main" style="margin-left:250px">
+
+  <div class="w3-row w3-padding-64">
+    <!-- Thông tin khai giảng -->
+    <div id="course_start_info" class="w3-container w3-padding-32">
+      <h2>Thông tin khai giảng</h2>
+      <p style="text-align:justify;">
+        05/09/2024 - 06/01/2025
+      </p>
+    </div>
+
+    <!-- Thông tin semina -->
+    <div id="seminar_info" class="w3-container w3-padding-32">
+      <h2>Thông tin semina</h2>
+      <p style="text-align:justify;">
+        Mã học phần: IT4409
+        Tên học phần: Công nghệ web và dịch vụ trực tuyến / Web technologies and e-Services
+        Giảng viên: Phạm Huy Hoàng
+      </p>
+    </div>
+
+    <!-- Thông tin công ty quan tâm -->
+    <div id="company_info" class="w3-container w3-padding-32">
+      <h2>Thông tin công ty quan tâm</h2>
+      <p style="text-align:justify;">
+        Tất cả công ty cần phát triển công nghệ web
+      </p>
+    </div>
+  </div>
+  <div w3-include-html="footer.html"></div>
+
+</div>
+
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+<script>
+  w3.includeHTML();
+</script>
+
+</body>
+</html>
