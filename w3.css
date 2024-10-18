@@ -1086,7 +1086,7 @@ a {
   font-size: 15px !important;
 }
 .w3-large {
-  font-size: 18px !important;
+  font-size: 17.5px !important;
 }
 .w3-xlarge {
   font-size: 24px !important;
@@ -1618,4 +1618,44 @@ a {
 .w3-border-pale-blue,
 .w3-hover-border-pale-blue:hover {
   border-color: #e7ffff !important;
+}
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", sans-serif;
+}
+
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 44px;
+  bottom: 0;
+  height: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #0770a8;
+}
+
+.w3-sidebar a {
+  color: #454545 !important;
+}
+
+.w3-bar a {
+  color: #ffffff !important;
+}
+
+.w3-bar a:hover,
+.w3-sidebar a:hover {
+  background-color: #0770a8 !important;
 }
