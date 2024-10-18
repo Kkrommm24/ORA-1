@@ -1,15 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+
 <head>
-  <title>Index</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>W3.CSS Template</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="./w3.css" />
+  <link rel="stylesheet" href="./w3-theme-black.css" />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Roboto"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
   <style>
-    html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+    html,
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Roboto", sans-serif;
+    }
+
     .w3-sidebar {
       z-index: 3;
       width: 250px;
@@ -19,73 +35,294 @@
     }
   </style>
 </head>
+
 <body>
-
-<!-- Navbar -->
-<div w3-include-html="navbar.html"></div>
-
-<!-- Include sidebar -->
-<div w3-include-html="sidebar.html"></div>
-
-<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
-<div class="w3-main" style="margin-left: 250px">
-  <div id="main-content">
-    <iframe src="homepage.html" style="width: 100%; height: 100vh; border: none;"></iframe>
+  <!-- Navbar -->
+  <div class="w3-top">
+    <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+      <a
+        class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1"
+        href="javascript:void(0)"
+        onclick="w3_open()"
+        ><i class="fa fa-bars"></i
+      ></a>
+      <a href="index.html" class="w3-bar-item w3-button w3-theme-l1">
+        <img src="./logo.png" style="max-height: 27px" />
+      </a>
+      <a
+        href="course-info.html"
+        class="w3-bar-item w3-button w3-hide-small w3-hover-white"
+        >Thông tin môn học</a
+      >
+      <a
+        href="cnweb.html"
+        class="w3-bar-item w3-button w3-hide-small w3-hover-white"
+        >Các công nghệ web</a
+      >
+      <a
+        href="student-info.html"
+        class="w3-bar-item w3-button w3-hide-small w3-hover-white"
+        >Thông tin sinh viên</a
+      >
+    </div>
   </div>
 
-  <!-- Pagination -->
-  <div class="w3-center w3-padding-32"></div>
+  <!-- Sidebar -->
+  <nav
+    class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left"
+    id="mySidebar"
+  >
+    <a
+      href="javascript:void(0)"
+      onclick="w3_close()"
+      class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large"
+      title="Close Menu"
+    >
+      <i class="fa fa-remove"></i>
+    </a>
+    <h4 class="w3-bar-item"><b>Menu</b></h4>
+    <a class="w3-bar-item w3-button w3-hover-black" href="#1"
+      >Thông tin khai giảng</a
+    >
+    <a class="w3-bar-item w3-button w3-hover-black" href="#2"
+      >Thông tin Semina</a
+    >
+    <a class="w3-bar-item w3-button w3-hover-black" href="#3"
+      >Các công ty quan tâm</a
+    >
+  </nav>
 
-  <!-- Include footer -->
-  <div w3-include-html="footer.html"></div>
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div
+    class="w3-overlay w3-hide-large"
+    onclick="w3_close()"
+    style="cursor: pointer"
+    title="close side menu"
+    id="myOverlay"
+  ></div>
 
-  <!-- END MAIN -->
-</div>
+  <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+  <div class="w3-main" style="margin-left: 250px">
+    <div class="w3-row w3-padding-64" id="1">
+      <div class="w3-twothird w3-container">
+        <h1 class="w3-text-teal">Thông tin khai giảng</h1>
+        <p><b>Ngày khai giảng:</b> 9 tháng 9, 2024</p>
+        <p><b>Địa điểm:</b> D9-501, Đại học Bách Khoa Hà Nội</p>
+        <p><b>Giảng viên:</b> Phạm Huy Hoàng</p>
+        <p><b>Nội dung:</b></p>
+        <ul>
+          <li>
+            Tổng quan về môn học: Phần này sẽ giới thiệu cho sinh viên về các
+            nội dung chính của môn học. Giảng viên sẽ giúp sinh viên hiểu rõ về
+            phạm vi kiến thức và kỹ năng cần nắm vững, cũng như các khái niệm cơ
+            bản liên quan đến môn học. Đây là một phần quan trọng để sinh viên
+            hình dung được kế hoạch học tập trong suốt kỳ học.
+          </li>
+          <li>
+            Các yêu cầu và mục tiêu môn học: Trong phần này, giảng viên sẽ thảo
+            luận về những yêu cầu cần thiết mà sinh viên cần tuân thủ để đạt
+            được kết quả tốt trong môn học. Điều này bao gồm các yêu cầu về điểm
+            danh, tham gia thảo luận, và nộp bài đúng hạn. Đồng thời, các mục
+            tiêu học tập cụ thể của môn học cũng sẽ được trình bày rõ ràng để
+            sinh viên có định hướng đúng đắn cho quá trình học tập.
+          </li>
+          <li>
+            Nói về bài tập hàng tuần: Giảng viên sẽ giới thiệu về cấu trúc và
+            nội dung của các bài tập hàng tuần, đây là phần thiết yếu để củng cố
+            kiến thức và kỹ năng cho sinh viên. Các bài tập sẽ được thiết kế để
+            giúp sinh viên áp dụng lý thuyết vào thực tế, đồng thời rèn luyện
+            khả năng tư duy và giải quyết vấn đề. Lịch trình và cách thức nộp
+            bài tập cũng sẽ được giải thích chi tiết.
+          </li>
+        </ul>
+        <p>
+          <b>Thông tin bổ sung:</b> Để đảm bảo các sinh viên chuẩn bị tốt trước
+          buổi khai giảng, hãy theo dõi thông báo trên hệ thống E-learning của
+          trường và tải xuống các tài liệu liên quan được cung cấp trước ngày
+          học chính thức.
+        </p>
+        <p>
+          <b>Lưu ý:</b> Sinh viên cần mang theo thẻ sinh viên và đến trước giờ
+          khai giảng ít nhất 10 phút để hoàn tất thủ tục điểm danh và nhận tài
+          liệu học tập.
+        </p>
+      </div>
+      <div class="w3-third w3-container">
+        <a
+          href="https://ctt.hust.edu.vn/DisplayWeb/DisplayKehoach?kehoach=25200"
+          target="_blank"
+        >
+          <img
+            src="./ad-hocphi.jpg"
+            alt="Quảng cáo 1"
+            class="w3-padding-large w3-padding-32 w3-center"
+            style="max-width: 100%; height: auto"
+          />
+        </a>
+        <a href="https://ctt.hust.edu.vn/Subservices?id=10" target="_blank">
+          <img
+            src="./ad-hust.jpg"
+            alt="Quảng cáo 2"
+            class="w3-padding-large w3-center"
+            style="max-width: 100%; height: auto"
+          />
+        </a>
+      </div>
+    </div>
 
-<script src="https://www.w3schools.com/lib/w3.js"></script>
-<script>
-  w3.includeHTML();
+    <div class="w3-row w3-padding-64" id="2">
+      <div class="w3-twothird w3-container">
+        <h1 class="w3-text-teal">Thông tin Seminar</h1>
+        <p>
+          <b>Chủ đề:</b> "Ứng dụng AI trong phát triển web và tối ưu hóa trải
+          nghiệm người dùng"
+        </p>
+        <p><b>Thời gian:</b> 20 tháng 12, 2024, từ 10h00 đến 12h00</p>
+        <p>
+          <b>Địa điểm:</b> Phòng hội thảo, Tòa nhà C2, Đại học Bách Khoa Hà Nội
+        </p>
+        <p>
+          <b>Diễn giả:</b> Bà Nguyễn Thị D, Trưởng phòng nghiên cứu và phát
+          triển (R&D) của Công ty XYZ
+        </p>
+        <p><b>Nội dung chính:</b></p>
+        <ul>
+          <li>
+            Giới thiệu về các ứng dụng của trí tuệ nhân tạo (AI) trong phát
+            triển web. Đây sẽ là phần mở đầu với mục đích giúp người tham gia
+            hiểu rõ hơn về vai trò của AI trong các công nghệ web hiện đại, từ
+            việc tự động hóa các quy trình phát triển đến cách AI cải thiện tính
+            tương tác và giao diện người dùng.
+          </li>
+          <li>
+            Các kỹ thuật tối ưu hóa trải nghiệm người dùng bằng AI. Trong phần
+            này, diễn giả sẽ đi sâu vào các công cụ và phương pháp cụ thể để cải
+            thiện trải nghiệm người dùng thông qua AI, như sử dụng machine
+            learning để cá nhân hóa nội dung, phân tích hành vi người dùng để đề
+            xuất các giải pháp tối ưu hóa giao diện, và các thuật toán hỗ trợ
+            điều chỉnh luồng thông tin trên trang web.
+          </li>
+          <li>
+            Phân tích các case study thành công trong việc áp dụng AI vào web.
+            Bài giảng sẽ đưa ra các ví dụ thực tế từ các dự án đã triển khai
+            thành công, giúp người tham dự có cái nhìn rõ ràng về cách AI có thể
+            mang lại giá trị gia tăng cho các ứng dụng web. Một số ví dụ điển
+            hình sẽ bao gồm việc sử dụng AI để tăng tốc độ tải trang, cải thiện
+            khả năng tìm kiếm, và tự động hóa quy trình kiểm thử web.
+          </li>
+          <li>
+            Hỏi đáp và chia sẻ kinh nghiệm từ các chuyên gia trong lĩnh vực AI
+            và web. Đây là cơ hội để người tham gia đặt câu hỏi và thảo luận với
+            các chuyên gia về những thách thức thực tế khi triển khai AI vào các
+            dự án web, cũng như cách khắc phục chúng để đạt được hiệu quả cao
+            nhất.
+          </li>
+        </ul>
+        <p>
+          <b>Đăng ký tham dự:</b> Để tham dự, xin vui lòng đăng ký trước qua
+          email của ban tổ chức:
+          <a href="mailto:seminar2024@abc.com">seminar2024@abc.com</a>. Số lượng
+          chỗ ngồi có hạn nên các bạn hãy nhanh tay đăng ký sớm để đảm bảo có cơ
+          hội tham gia.
+        </p>
+        <p>
+          <b>Phí tham dự:</b> Miễn phí cho sinh viên và giảng viên của Đại học
+          Bách Khoa Hà Nội. Đối với các đối tượng khác, phí tham dự là 100.000
+          VND. Mọi chi tiết về phương thức thanh toán sẽ được gửi kèm theo khi
+          đăng ký.
+        </p>
+        <p>
+          <b>Lưu ý:</b> Để đảm bảo chất lượng và tiện lợi cho buổi seminar, ban
+          tổ chức yêu cầu người tham dự đến trước ít nhất 15 phút để kiểm tra và
+          sắp xếp chỗ ngồi.
+        </p>
+      </div>
+      <div class="w3-third w3-container">
+        <a
+          href="https://ctt.hust.edu.vn/DisplayWeb/DisplayKehoach?kehoach=25200"
+          target="_blank"
+        >
+          <img
+            src="./ad-hocphi.jpg"
+            alt="Quảng cáo 1"
+            class="w3-padding-large w3-padding-32 w3-center"
+            style="max-width: 100%; height: auto"
+          />
+        </a>
+        <a href="https://ctt.hust.edu.vn/Subservices?id=10" target="_blank">
+          <img
+            src="./ad-hust.jpg"
+            alt="Quảng cáo 2"
+            class="w3-padding-large w3-center"
+            style="max-width: 100%; height: auto"
+          />
+        </a>
+      </div>
+    </div>
 
-  // Function to load content dynamically
-  function loadContent(page) {
-    document.getElementById('main-content').innerHTML = '<iframe src="' + page + '" style="width:100%; height:100vh; border:none;"></iframe>';
-  }
+    <div class="w3-row w3-padding-64" id="3">
+      <div class="w3-twothird w3-container">
+        <h1 class="w3-text-teal">Các công ty quan tâm</h1>
+        <p>
+          <b>Công ty GHI:</b> Công ty Cổ phần GHI chuyên cung cấp các giải pháp phần mềm quản lý doanh nghiệp, hiện đang tuyển lập trình viên web có kiến thức về Angular và Spring Boot. Đây là cơ hội tốt cho các ứng viên đam mê phát triển web với công nghệ hiện đại. Công ty GHI luôn chú trọng đến việc phát triển kỹ năng cho nhân viên, với môi trường làm việc năng động và chuyên nghiệp.
+        </p>
+        <p>
+          <b>Công ty JKL:</b> Công ty phát triển phần mềm JKL đang tham gia vào các dự án tiên tiến về trí tuệ nhân tạo (AI) và học máy (Machine Learning). Hiện tại, họ đang tìm kiếm sinh viên thực tập có kinh nghiệm về Python và TensorFlow để tham gia vào các dự án thực tế, nơi bạn có thể học hỏi và phát triển các kỹ năng AI. Đây là cơ hội lý tưởng cho những ai đam mê công nghệ AI và muốn phát triển sự nghiệp trong lĩnh vực này.
+        </p>
+        <p>
+          <b>Công ty MNO:</b> Công ty dịch vụ công nghệ MNO chuyên phát triển ứng dụng di động cho nhiều nền tảng khác nhau. Hiện tại, công ty đang tìm lập trình viên Mobile có kiến thức về Flutter và Dart để phát triển các ứng dụng sáng tạo và tối ưu hóa trải nghiệm người dùng. Với đội ngũ chuyên gia giàu kinh nghiệm, MNO sẽ là nơi phù hợp để các lập trình viên di động phát triển sự nghiệp và nâng cao kỹ năng.
+        </p>        
+      </div>
+      <div class="w3-third w3-container">
+        <a
+          href="https://ctt.hust.edu.vn/DisplayWeb/DisplayKehoach?kehoach=25200"
+          target="_blank"
+        >
+          <img
+            src="./ad-hocphi.jpg"
+            alt="Quảng cáo 1"
+            class="w3-padding-large w3-padding-32 w3-center"
+            style="max-width: 100%; height: auto"
+          />
+        </a>
+        <a href="https://ctt.hust.edu.vn/Subservices?id=10" target="_blank">
+          <img
+            src="./ad-hust.jpg"
+            alt="Quảng cáo 2"
+            class="w3-padding-large w3-center"
+            style="max-width: 100%; height: auto"
+          />
+        </a>
+      </div>
+    </div>
 
-  // Add event listeners to navbar links
-  document.addEventListener("DOMContentLoaded", function() {
-    var navbarLinks = document.querySelectorAll('[data-page]');
-    navbarLinks.forEach(function(link) {
-      link.addEventListener('click', function(event) {
-        event.preventDefault();
-        var page = link.getAttribute('data-page');
-        loadContent(page);
-      });
-    });
-  });
+    <div w3-include-html="footer.html"></div>
 
-  // Get the Sidebar
-  var mySidebar = document.getElementById("mySidebar");
+    <!-- END MAIN -->
+  </div>
 
-  // Get the DIV with overlay effect
-  var overlayBg = document.getElementById("myOverlay");
+  <script>
+    // Get the Sidebar
+    var mySidebar = document.getElementById("mySidebar");
 
-  // Toggle between showing and hiding the sidebar, and add overlay effect
-  function w3_open() {
-    if (mySidebar.style.display === 'block') {
-      mySidebar.style.display = 'none';
-      overlayBg.style.display = "none";
-    } else {
-      mySidebar.style.display = 'block';
-      overlayBg.style.display = "block";
+    // Get the DIV with overlay effect
+    var overlayBg = document.getElementById("myOverlay");
+
+    // Toggle between showing and hiding the sidebar, and add overlay effect
+    function w3_open() {
+      if (mySidebar.style.display === "block") {
+        mySidebar.style.display = "none";
+        overlayBg.style.display = "none";
+      } else {
+        mySidebar.style.display = "block";
+        overlayBg.style.display = "block";
+      }
     }
-  }
 
-  // Close the sidebar with the close button
-  function w3_close() {
-    mySidebar.style.display = "none";
-    overlayBg.style.display = "none";
-  }
-</script>
-
+    // Close the sidebar with the close button
+    function w3_close() {
+      mySidebar.style.display = "none";
+      overlayBg.style.display = "none";
+    }
+  </script>
 </body>
-</html>

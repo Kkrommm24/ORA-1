@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+
+<head>
+  <title>W3.CSS Template</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="./w3.css" />
+  <link rel="stylesheet" href="./w3-theme-black.css" />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Roboto"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <style>
+    html,
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Roboto", sans-serif;
+    }
+
+    .w3-sidebar {
+      z-index: 3;
+      width: 250px;
+      top: 43px;
+      bottom: 0;
+      height: inherit;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <div class="w3-top">
+    <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+      <a
+        class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1"
+        href="javascript:void(0)"
+        onclick="w3_open()"
+        ><i class="fa fa-bars"></i
+      ></a>
+      <a href="index.html" class="w3-bar-item w3-button w3-theme-l1">
+        <img src="./logo.png" style="max-height: 27px" />
+      </a>
+      <a
+        href="course-info.html"
+        class="w3-bar-item w3-button w3-hide-small w3-hover-white"
+        >Thông tin môn học</a
+      >
+      <a
+        href="cnweb.html"
+        class="w3-bar-item w3-button w3-hide-small w3-hover-white"
+        >Các công nghệ web</a
+      >
+      <a
+        href="student-info.html"
+        class="w3-bar-item w3-button w3-hide-small w3-hover-white"
+        >Thông tin sinh viên</a
+      >
+    </div>
+  </div>
+
+  <!-- Sidebar -->
+  <nav
+    class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left"
+    id="mySidebar"
+  >
+    <a
+      href="javascript:void(0)"
+      onclick="w3_close()"
+      class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large"
+      title="Close Menu"
+    >
+      <i class="fa fa-remove"></i>
+    </a>
+    <h4 class="w3-bar-item"><b>Menu</b></h4>
+    <a class="w3-bar-item w3-button w3-hover-black" href="#1"
+      >Các công nghệ Web</a
+    >
+    <a class="w3-bar-item w3-button w3-hover-black" href="#2"
+      >Ứng dụng của Công nghệ Web</a
+    >
+    <a class="w3-bar-item w3-button w3-hover-black" href="#3"
+      >Xu hướng Phát triển Web</a
+    >
+  </nav>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div
+    class="w3-overlay w3-hide-large"
+    onclick="w3_close()"
+    style="cursor: pointer"
+    title="close side menu"
+    id="myOverlay"
+  ></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+    <div class="w3-main" style="margin-left:250px">
+        <div class="w3-row w3-padding-64" id="1">
+            <div class="w3-twothird w3-container">
+              <h1 class="w3-text-teal">Các công nghệ Web</h1>
+              <p><b>Các công nghệ web cơ bản:</b></p>
+              <ul>
+                  <li><b>HTML5:</b> Ngôn ngữ đánh dấu tiêu chuẩn cho việc tạo ra cấu trúc trang web, hỗ trợ các tính năng đa phương tiện như video, âm thanh mà không cần plugin bổ sung, và cung cấp nhiều yếu tố mới giúp cải thiện SEO và khả năng truy cập.</li>
+                  <li><b>CSS3:</b> Ngôn ngữ dùng để định hình và tạo phong cách cho trang web, bao gồm các tính năng như biến đổi, chuyển tiếp, hoạt ảnh và bố cục lưới (grid layout). CSS3 giúp tạo ra các giao diện web đẹp mắt và mượt mà, hỗ trợ thiết kế responsive.</li>
+                  <li><b>JavaScript:</b> Ngôn ngữ lập trình phổ biến trong việc tạo các tương tác động trên trang web, cho phép trang web phản hồi lại hành vi của người dùng mà không cần tải lại trang. JavaScript có thể sử dụng trực tiếp hoặc qua các thư viện và framework như jQuery, AngularJS để tăng cường hiệu suất và đơn giản hóa quá trình phát triển.</li>
+              </ul>
+              <p><b>Công nghệ Web nâng cao:</b></p>
+              <ul>
+                  <li><b>Vue.js:</b> Framework JavaScript tiến bộ tập trung vào việc xây dựng giao diện người dùng (UI) và ứng dụng đơn trang (SPA). Vue.js dễ học, linh hoạt và có thể tích hợp dần dần vào các dự án hiện có mà không cần thay đổi lớn cấu trúc mã.</li>
+                  <li><b>Express.js:</b> Framework web cho Node.js, được thiết kế để xây dựng các ứng dụng web và API một cách nhanh chóng và hiệu quả. Express.js cung cấp một tập hợp các công cụ tối thiểu nhưng mạnh mẽ, phù hợp cho các dự án phát triển ứng dụng từ đơn giản đến phức tạp.</li>
+                  <li><b>Tailwind CSS:</b> Framework CSS tiện ích-first, giúp phát triển giao diện web nhanh chóng và tùy biến cao. Tailwind CSS cung cấp các lớp tiện ích sẵn có để tạo bố cục và kiểu dáng mà không cần viết CSS tùy chỉnh. Nó hỗ trợ responsive mạnh mẽ và rất linh hoạt trong thiết kế.</li>
+              </ul>              
+            </div>
+            <div class="w3-third w3-container">
+                <a href="https://ctt.hust.edu.vn/DisplayWeb/DisplayKehoach?kehoach=25200" target="_blank">
+                    <img src="./ad-hocphi.jpg" alt="Quảng cáo 1" class="w3-padding-large w3-padding-32 w3-center"
+                        style="max-width: 100%; height: auto;" />
+                </a>
+                <a href="https://ctt.hust.edu.vn/DisplayWeb/DisplayKehoach?kehoach=25200" target="_blank">
+                    <img src="./ad-hust.jpg" alt="Quảng cáo 2" class="w3-padding-large w3-center"
+                        style="max-width: 100%; height: auto;" />
+                </a>
+            </div>
+        </div>
+
+        <div class="w3-row w3-padding-64" id="2">
+            <div class="w3-twothird w3-container">
+              <h1 class="w3-text-teal">Ứng dụng của Công nghệ Web</h1>
+              <ul>
+                  <li><b>Ứng dụng thương mại điện tử:</b> Công nghệ Web đã làm nền tảng cho sự phát triển của các nền tảng thương mại điện tử như Magento và BigCommerce. Những hệ thống này giúp các doanh nghiệp tạo ra cửa hàng trực tuyến với khả năng tùy chỉnh cao, tích hợp nhiều tính năng như thanh toán trực tuyến, quản lý kho hàng và marketing, đáp ứng nhu cầu của các doanh nghiệp từ nhỏ đến lớn.</li>
+                  <li><b>Ứng dụng mạng xã hội:</b> Công nghệ Web là cốt lõi của các nền tảng mạng xã hội như LinkedIn, Reddit, và TikTok. Các ứng dụng này sử dụng công nghệ Web để kết nối hàng triệu người dùng trên toàn cầu, cho phép chia sẻ nội dung, giao tiếp và xây dựng cộng đồng dựa trên các mối quan tâm chung. Các tính năng động như phát trực tiếp, nhắn tin và đăng tải nội dung đều được thực hiện thông qua công nghệ Web tiên tiến.</li>
+                  <li><b>Ứng dụng dịch vụ trực tuyến:</b> Các công cụ làm việc và dịch vụ trực tuyến như Microsoft Office 365, Google Workspace và Slack đều được xây dựng dựa trên công nghệ Web. Những ứng dụng này cung cấp các dịch vụ làm việc nhóm, quản lý dự án và cộng tác trực tuyến, giúp các doanh nghiệp và nhóm làm việc hiệu quả hơn mà không cần cài đặt phần mềm phức tạp.</li>
+              </ul>              
+            </div>
+            <div class="w3-third w3-container">
+                <a href="https://ctt.hust.edu.vn/DisplayWeb/DisplayKehoach?kehoach=25200" target="_blank">
+                    <img src="./ad-hocphi.jpg" alt="Quảng cáo 1" class="w3-padding-large w3-padding-32 w3-center"
+                        style="max-width: 100%; height: auto;" />
+                </a>
+                <a href="https://ctt.hust.edu.vn/Subservices?id=10" target="_blank">
+                    <img src="./ad-hust.jpg" alt="Quảng cáo 2" class="w3-padding-large w3-center"
+                        style="max-width: 100%; height: auto;" />
+                </a>
+            </div>
+        </div>
+
+        <div class="w3-row w3-padding-64" id="3">
+            <div class="w3-twothird w3-container">
+              <h1 class="w3-text-teal">Xu hướng Phát triển Web</h1>
+              <ul>
+                  <li><b>Microservices Architecture:</b> Kiến trúc microservices phân chia ứng dụng thành các dịch vụ nhỏ, độc lập với nhau, mỗi dịch vụ chịu trách nhiệm một chức năng cụ thể. Điều này giúp việc phát triển, bảo trì và mở rộng ứng dụng trở nên dễ dàng hơn, đồng thời cho phép các nhóm phát triển hoạt động độc lập trên các phần khác nhau của hệ thống. Các công ty như Netflix và Amazon đã thành công trong việc áp dụng kiến trúc này để đáp ứng yêu cầu mở rộng toàn cầu và xử lý khối lượng lớn người dùng.</li>
+                  <li><b>Serverless Computing:</b> Điện toán không máy chủ (Serverless) là mô hình phát triển ứng dụng mà các nhà phát triển không cần phải quản lý hạ tầng máy chủ, thay vào đó các dịch vụ như AWS Lambda hoặc Google Cloud Functions tự động cung cấp tài nguyên theo nhu cầu. Điều này giúp tối ưu hóa chi phí, đơn giản hóa quá trình phát triển và triển khai, cho phép các nhà phát triển tập trung vào việc viết mã thay vì lo lắng về quản lý hạ tầng.</li>
+                  <li><b>WebAssembly:</b> WebAssembly (Wasm) là công nghệ cho phép chạy mã nhị phân với hiệu suất gần như mã gốc trên trình duyệt. Điều này mở ra cơ hội cho các ứng dụng web phức tạp, đặc biệt là các ứng dụng đồ họa nặng, trò chơi và phần mềm kỹ thuật như AutoCAD, hoạt động mượt mà trên web mà không cần cài đặt ứng dụng gốc. WebAssembly giúp cải thiện hiệu suất và khả năng tương thích của các ứng dụng web trên nhiều nền tảng khác nhau.</li>
+              </ul>              
+            </div>
+            <div class="w3-third w3-container">
+                <a href="https://ctt.hust.edu.vn/DisplayWeb/DisplayKehoach?kehoach=25200" target="_blank">
+                    <img src="./ad-hocphi.jpg" alt="Quảng cáo 1" class="w3-padding-large w3-padding-32 w3-center"
+                        style="max-width: 100%; height: auto;" />
+                </a>
+                <a href="https://ctt.hust.edu.vn/Subservices?id=10" target="_blank">
+                    <img src="./ad-hust.jpg" alt="Quảng cáo 2" class="w3-padding-large w3-center"
+                        style="max-width: 100%; height: auto;" />
+                </a>
+            </div>
+        </div>
+
+  
+        <!-- Include footer -->
+        <div w3-include-html="footer.html"></div>
+
+        <!-- END MAIN -->
+    </div>
+
+
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+<script>
+  w3.includeHTML();
+</script>
+
+</body>
+</html>

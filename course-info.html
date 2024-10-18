@@ -1,15 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+
 <head>
-  <title>Course Information</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>W3.CSS Template</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="./w3.css" />
+  <link rel="stylesheet" href="./w3-theme-black.css" />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Roboto"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
   <style>
-    html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+    html,
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Roboto", sans-serif;
+    }
+
     .w3-sidebar {
       z-index: 3;
       width: 250px;
@@ -19,52 +35,161 @@
     }
   </style>
 </head>
+
 <body>
-
-<div class="w3-row w3-padding-64">
-  <!-- Thông tin môn học -->
-  <div id="thongtin_monhoc" class="w3-container w3-padding-32">
-    <h2>Thông tin môn học</h2>
-    <p style="text-align: justify">
-      Học phần cung cấp các kiến thức cần thiết để xây dựng và phát triển
-      các ứng dụng, dịch vụ trực tuyến trên môi trường web. Sau khi học
-      xong học phần này, sinh viên có khả năng:
-    </p>
-    <p style="text-align: justify">
-      ● Có thể sử dụng một ngôn ngữ lập trình như JSP, PHP để phát triển
-      ứng dụng web cho các lĩnh vực khác nhau như: hệ quản trị nội dung
-      (CMS), cổng thông tin (Portal), hay các ứng dụng điện tử (eCommerce,
-      eLearning, eGoverment,...)
-    </p>
-    <p style="text-align: justify">
-      ● Nắm vững được các công nghệ web, các platform, framework hiện đang
-      thịnh hành.
-    </p>
-    <p style="text-align: justify">
-      Ngoài ra học phần cũng cung cấp cho sinh viên các kỹ năng làm việc
-      nhóm, thuyết trình và thái độ cần thiết để làm việc và ứng dụng các
-      kỹ thuật trong các dự án, công ty về phần mềm sau này.
-    </p>
-    <section class="prerequisites">
-      <h2>Điều kiện</h2>
-      <p style="text-align: justify">
-        Học phần tiên quyết:&nbsp; - <br />
-        Học phần học trước:&nbsp; -IT3090 hoặc IT3091: Cơ sở dữ liệu<br />
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
-        -IT3100 hoặc IT3600: Lập trình hướng đối tượng <br />
-        Học phần song hành:&nbsp; -<br />
-      </p>
-    </section>
+  <!-- Navbar -->
+  <div class="w3-top">
+    <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+      <a
+        class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1"
+        href="javascript:void(0)"
+        onclick="w3_open()"
+        ><i class="fa fa-bars"></i
+      ></a>
+      <a href="index.html" class="w3-bar-item w3-button w3-theme-l1">
+        <img src="./logo.png" style="max-height: 27px" />
+      </a>
+      <a
+        href="course-info.html"
+        class="w3-bar-item w3-button w3-hide-small w3-hover-white"
+        >Thông tin môn học</a
+      >
+      <a
+        href="cnweb.html"
+        class="w3-bar-item w3-button w3-hide-small w3-hover-white"
+        >Các công nghệ web</a
+      >
+      <a
+        href="student-info.html"
+        class="w3-bar-item w3-button w3-hide-small w3-hover-white"
+        >Thông tin sinh viên</a
+      >
+    </div>
   </div>
-  <div class="w3-third w3-container">
-    <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
-    <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
-  </div>
-</div>
 
-<!-- Include footer -->
-<div w3-include-html="footer.html"></div>
+  <!-- Sidebar -->
+  <nav
+    class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left"
+    id="mySidebar"
+  >
+    <a
+      href="javascript:void(0)"
+      onclick="w3_close()"
+      class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large"
+      title="Close Menu"
+    >
+      <i class="fa fa-remove"></i>
+    </a>
+    <h4 class="w3-bar-item"><b>Menu</b></h4>
+    <a class="w3-bar-item w3-button w3-hover-black" href="#1"
+      >Thông tin môn học</a
+    >
+    <a class="w3-bar-item w3-button w3-hover-black" href="#2"
+      >Nội dung học tập</a
+    >
+    <a class="w3-bar-item w3-button w3-hover-black" href="#3"
+      >Đánh giá và thang điểm</a
+    >
+  </nav>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div
+    class="w3-overlay w3-hide-large"
+    onclick="w3_close()"
+    style="cursor: pointer"
+    title="close side menu"
+    id="myOverlay"
+  ></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+  <div class="w3-main" style="margin-left:250px">
+    <div class="w3-row w3-padding-64" id="1">
+      <div class="w3-twothird w3-container">
+        <h1 class="w3-text-teal">Thông tin môn học</h1>
+        <p><b>Mã môn học:</b> IT4409 - Công nghệ Web và Dịch vụ trực tuyến</p>
+        <p><b>Giảng viên:</b> TS. Phạm Huy Hoàng</p>
+        <p><b>Số tín chỉ:</b> 3 tín chỉ</p>
+        <p><b>Thời gian học:</b></p>
+        <ul>
+            <li><b>Lịch học:</b> Thứ 6, từ 14h10 - 17h25</li>
+            <li><b>Địa điểm:</b> D9-501, Đại học Bách Khoa Hà Nội</li>
+        </ul>
+        <p><b>Mô tả môn học:</b></p>
+        <p>
+          Môn học này cung cấp kiến thức cơ bản và nâng cao về công nghệ phát triển ứng dụng Web, tập trung vào các ngôn ngữ và framework phổ biến như HTML, CSS, JavaScript. Sinh viên sẽ học cách xây dựng giao diện người dùng, tương tác động với người dùng, và tối ưu hóa hiệu suất trang web. 
+        </p>
+        <p>
+          Ngoài ra, môn học cũng giới thiệu các dịch vụ trực tuyến quan trọng như dịch vụ lưu trữ đám mây, bảo mật trên web, và các API hỗ trợ phát triển ứng dụng web. Sinh viên sẽ thực hiện các dự án mini, qua đó áp dụng lý thuyết vào thực tế phát triển và triển khai ứng dụng web.
+        </p>
+        <p>
+          Trong suốt khóa học, sinh viên sẽ làm việc theo nhóm để hoàn thành các bài tập thực hành, giúp nâng cao kỹ năng làm việc nhóm và giải quyết vấn đề. Kết thúc môn học, sinh viên sẽ có khả năng xây dựng một ứng dụng web hoàn chỉnh, hiểu biết về cấu trúc hệ thống web, và sử dụng thành thạo các dịch vụ trực tuyến để hỗ trợ phát triển ứng dụng.
+        </p>        
+      </div>
+      <div class="w3-third w3-container">
+          <a href="https://ctt.hust.edu.vn/DisplayWeb/DisplayKehoach?kehoach=25200" target="_blank">
+              <img src="./ad-hocphi.jpg" alt="Quảng cáo 1" class="w3-padding-large w3-padding-32 w3-center"
+                  style="max-width: 100%; height: auto;" />
+          </a>
+          <a href="https://ctt.hust.edu.vn/Subservices?id=10" target="_blank">
+              <img src="./ad-hust.jpg" alt="Quảng cáo 2" class="w3-padding-large w3-center"
+                  style="max-width: 100%; height: auto;" />
+          </a>
+      </div>
+    </div>
+
+    <div class="w3-row w3-padding-64" id="2">
+      <div class="w3-twothird w3-container">
+        <h1 class="w3-text-teal">Nội dung học tập</h1>
+        <ul>
+            <li>Giới thiệu về các công nghệ web hiện đại như HTML, CSS, và JavaScript: Sinh viên sẽ học các kiến thức nền tảng và các tiêu chuẩn web mới nhất, từ cách xây dựng giao diện người dùng đến việc tạo các tương tác động trên trang web.</li>
+            <li>Các dịch vụ trực tuyến: API, cloud, và dịch vụ đám mây: Môn học sẽ giới thiệu về các dịch vụ trực tuyến quan trọng trong phát triển ứng dụng web, bao gồm cách tích hợp API, sử dụng dịch vụ đám mây để lưu trữ dữ liệu, và triển khai ứng dụng trên các nền tảng cloud.</li>
+            <li>Thực hành: Xây dựng các ứng dụng web cơ bản: Sinh viên sẽ thực hành phát triển các dự án mini để áp dụng những kiến thức đã học vào việc xây dựng các ứng dụng web cơ bản, từ khâu thiết kế giao diện đến triển khai chức năng.</li>
+            <li>Kiến thức về bảo mật Web: Tìm hiểu các mối đe dọa an ninh phổ biến đối với các trang web và cách thức bảo vệ ứng dụng web khỏi các cuộc tấn công, từ việc sử dụng các giao thức an toàn đến bảo vệ dữ liệu người dùng.</li>
+            <li>Triển khai ứng dụng Web trên môi trường thực tế: Hướng dẫn sinh viên cách triển khai ứng dụng web đã phát triển lên môi trường thực tế, bao gồm việc quản lý hosting, tối ưu hóa hiệu suất và bảo mật trên máy chủ.</li>
+        </ul>        
+      </div>
+      <div class="w3-third w3-container">
+          <a href="https://ctt.hust.edu.vn/DisplayWeb/DisplayKehoach?kehoach=25200" target="_blank">
+              <img src="./ad-hocphi.jpg" alt="Quảng cáo 1" class="w3-padding-large w3-padding-32 w3-center"
+                  style="max-width: 100%; height: auto;" />
+          </a>
+          <a href="https://ctt.hust.edu.vn/Subservices?id=10" target="_blank">
+              <img src="./ad-hust.jpg" alt="Quảng cáo 2" class="w3-padding-large w3-center"
+                  style="max-width: 100%; height: auto;" />
+          </a>
+      </div>
+    </div>
+
+    <div class="w3-row w3-padding-64" id="3">
+        <div class="w3-twothird w3-container">
+          <h1 class="w3-text-teal">Đánh giá và thang điểm</h1>
+          <p>Môn học bao gồm các thành phần tính điểm:</p>
+          <ul>
+              <li><b>Bài tập cá nhân:</b> 30% - Sinh viên sẽ thực hiện các bài tập cá nhân nhằm kiểm tra kiến thức và khả năng áp dụng kỹ thuật đã học vào các vấn đề thực tế. Các bài tập này yêu cầu sinh viên hoàn thành độc lập và sẽ đánh giá sự hiểu biết về công nghệ web và dịch vụ trực tuyến.</li>
+              <li><b>Bài tập ORA (Open Response Assessment):</b> 30% - Đây là các bài tập mở, yêu cầu sinh viên tự nghiên cứu và đưa ra các giải pháp cho các vấn đề thực tế. Các bài tập ORA giúp đánh giá kỹ năng giải quyết vấn đề và khả năng tư duy sáng tạo trong việc áp dụng các kiến thức về phát triển web.</li>
+              <li><b>Thi cuối kỳ:</b> 40% - Kỳ thi cuối kỳ sẽ kiểm tra toàn diện các kiến thức đã học trong môn học, bao gồm lý thuyết và thực hành. Sinh viên sẽ phải vượt qua kỳ thi để đạt được điểm số cần thiết cho môn học.</li>
+          </ul>
+          <p>Sinh viên phải tham gia đầy đủ các bài tập và mini project để có thể qua môn học.</p>          
+        </div>
+        <div class="w3-third w3-container">
+            <a href="https://ctt.hust.edu.vn/DisplayWeb/DisplayKehoach?kehoach=25200" target="_blank">
+                <img src="./ad-hocphi.jpg" alt="Quảng cáo 1" class="w3-padding-large w3-padding-32 w3-center"
+                    style="max-width: 100%; height: auto;" />
+            </a>
+            <a href="https://ctt.hust.edu.vn/Subservices?id=10" target="_blank">
+                <img src="./ad-hust.jpg" alt="Quảng cáo 2" class="w3-padding-large w3-center"
+                    style="max-width: 100%; height: auto;" />
+            </a>
+        </div>
+    </div>
+
+  
+    <!-- Include footer -->
+    <div w3-include-html="footer.html"></div>
+
+    <!-- END MAIN -->
+  </div>
+
 
 <script src="https://www.w3schools.com/lib/w3.js"></script>
 <script>

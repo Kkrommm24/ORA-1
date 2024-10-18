@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+
+<head>
+  <title>W3.CSS Template</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="./w3.css" />
+  <link rel="stylesheet" href="./w3-theme-black.css" />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Roboto"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <style>
+    html,
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Roboto", sans-serif;
+    }
+
+    .w3-sidebar {
+      z-index: 3;
+      width: 250px;
+      top: 43px;
+      bottom: 0;
+      height: inherit;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <div class="w3-top">
+    <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+      <a
+        class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1"
+        href="javascript:void(0)"
+        onclick="w3_open()"
+        ><i class="fa fa-bars"></i
+      ></a>
+      <a href="index.html" class="w3-bar-item w3-button w3-theme-l1">
+        <img src="./logo.png" style="max-height: 27px" />
+      </a>
+      <a
+        href="course-info.html"
+        class="w3-bar-item w3-button w3-hide-small w3-hover-white"
+        >Thông tin môn học</a
+      >
+      <a
+        href="cnweb.html"
+        class="w3-bar-item w3-button w3-hide-small w3-hover-white"
+        >Các công nghệ web</a
+      >
+      <a
+        href="student-info.html"
+        class="w3-bar-item w3-button w3-hide-small w3-hover-white"
+        >Thông tin sinh viên</a
+      >
+    </div>
+  </div>
+
+  <!-- Sidebar -->
+  <nav
+    class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left"
+    id="mySidebar"
+  >
+    <a
+      href="javascript:void(0)"
+      onclick="w3_close()"
+      class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large"
+      title="Close Menu"
+    >
+      <i class="fa fa-remove"></i>
+    </a>
+    <h4 class="w3-bar-item"><b>Menu</b></h4>
+    <a class="w3-bar-item w3-button w3-hover-black" href="#1"
+      >Thông tin cá nhân</a
+    >
+    <a class="w3-bar-item w3-button w3-hover-black" href="#2"
+      >Mục tiêu nghề nghiệp</a
+    >
+    <a class="w3-bar-item w3-button w3-hover-black" href="#3"
+      >Kỹ năng</a
+    >
+    <a class="w3-bar-item w3-button w3-hover-black" href="#4"
+      >Kinh nghiệm trong dự án</a
+    >
+  </nav>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div
+    class="w3-overlay w3-hide-large"
+    onclick="w3_close()"
+    style="cursor: pointer"
+    title="close side menu"
+    id="myOverlay"
+  ></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+    <div class="w3-main" style="margin-left:250px">
+        <div class="w3-row w3-padding-64" id="1">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal">Thông tin cá nhân</h1>
+                <div style="display: flex; align-items: center;">
+                  <p><b>Họ tên:</b> Hoàng Đức Gia Hưng</p>
+                  <img src="profile-photo.jpg" alt="Ảnh thẻ cá nhân" style="width: 100px; height: auto; margin-left: 100px;" />
+                </div>
+                <p><b>Mã số sinh viên:</b> 20215062</p>
+                <p><b>Email:</b> hung.hdg215062@sis.hust.edu.vn</p>
+                <p><b>Số điện thoại:</b> 0917727036</p>
+                <p><b>Địa chỉ:</b> Mai Dịch, Cầu Giấy, Hà Nội</p>
+                <p><b>Chuyên ngành:</b> Công nghệ Thông tin Việt Nhật</p>
+                <p><b>Trường đại học:</b> Đại học Bách Khoa Hà Nội</p>
+                <p><b>Sở thích:</b> Đọc sách, lập trình, và khám phá công nghệ mới.</p>
+            </div>
+            <div class="w3-third w3-container">
+                <a href="https://ctt.hust.edu.vn/DisplayWeb/DisplayKehoach?kehoach=25200" target="_blank">
+                    <img src="./ad-hocphi.jpg" alt="Quảng cáo 1" class="w3-padding-large w3-padding-32 w3-center"
+                        style="max-width: 100%; height: auto;" />
+                </a>
+                <a href="https://ctt.hust.edu.vn/Subservices?id=10" target="_blank">
+                    <img src="./ad-hust.jpg" alt="Quảng cáo 2" class="w3-padding-large w3-center"
+                        style="max-width: 100%; height: auto;" />
+                </a>
+            </div>
+        </div>
+
+        <div class="w3-row w3-padding-64" id="2">
+            <div class="w3-twothird w3-container">
+              <h1 class="w3-text-teal">Mục tiêu nghề nghiệp</h1>
+              <ul>
+                  <li>Mục tiêu của em là tạo ra một AI có thể giao tiếp bình thường, có tính cảm thông và sự thấu hiểu giống như một người bạn đáng tin cậy. Sự phát triển này sẽ tạo nên một công cụ mạnh mẽ để cải thiện cuộc sống của con người, hỗ trợ trong các tình huống giao tiếp xã hội, tư vấn, và giải quyết các vấn đề hàng ngày, giúp con người cảm thấy được lắng nghe và hỗ trợ hơn bao giờ hết.</li>
+                  <li>Để đạt được mục tiêu này, em đặt ra các bước cụ thể trong lộ trình nghề nghiệp của mình. Đầu tiên, em sẽ tập trung vào việc nâng cao kỹ năng lập trình và hiểu biết sâu sắc về các thuật toán học máy, đặc biệt là các mô hình xử lý ngôn ngữ tự nhiên (NLP) và học sâu (deep learning). Việc nắm vững các công nghệ này sẽ cho phép em xây dựng những ứng dụng AI tiên tiến có khả năng hiểu và phản hồi lại người dùng một cách tự nhiên nhất.</li>
+                  <li>Tiếp theo, em sẽ tham gia vào các dự án thực tế, từ các khóa học trực tuyến đến các cuộc thi hackathon, để áp dụng lý thuyết vào thực tiễn. Điều này không chỉ giúp em cải thiện kỹ năng kỹ thuật mà còn tăng cường khả năng làm việc nhóm và quản lý dự án. Qua đó, em mong muốn tích lũy kinh nghiệm quý báu từ việc hợp tác với những người có cùng đam mê trong lĩnh vực công nghệ, từ đó mở rộng mạng lưới quan hệ và học hỏi từ những chuyên gia hàng đầu.</li>
+                  <li>Cuối cùng, em sẽ liên tục cập nhật các xu hướng công nghệ mới nhất và tham gia vào cộng đồng nghiên cứu AI. Việc tham gia các hội thảo, hội nghị và đọc các tài liệu nghiên cứu sẽ giúp em luôn bắt kịp với những đổi mới trong ngành, từ đó ứng dụng những kiến thức đó vào công việc thực tế. Em tin rằng sự phát triển bền vững trong nghề nghiệp không chỉ đến từ kỹ năng cá nhân mà còn từ sự kết nối và học hỏi từ cộng đồng rộng lớn hơn.</li>
+              </ul>              
+            </div>
+            <div class="w3-third w3-container">
+                <a href="https://ctt.hust.edu.vn/DisplayWeb/DisplayKehoach?kehoach=25200" target="_blank">
+                    <img src="./ad-hocphi.jpg" alt="Quảng cáo 1" class="w3-padding-large w3-padding-32 w3-center"
+                        style="max-width: 100%; height: auto;" />
+                </a>
+                <a href="https://ctt.hust.edu.vn/Subservices?id=10" target="_blank">
+                    <img src="./ad-hust.jpg" alt="Quảng cáo 2" class="w3-padding-large w3-center"
+                        style="max-width: 100%; height: auto;" />
+                </a>
+            </div>
+        </div>
+
+        <div class="w3-row w3-padding-64" id="3">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal">Kỹ năng</h1>
+                <ul>
+                  <li>
+                    <b>Kinh nghiệm thực tập:</b> Thực tập tại Công ty Sun*, nơi em đã có cơ hội thực hiện các dự án phát triển ứng dụng web trong vòng 6 tháng. Trong thời gian này, em được giao nhiệm vụ tham gia vào quy trình thiết kế, phát triển và triển khai ứng dụng. Em đã học hỏi được nhiều điều quý báu về cách làm việc trong một môi trường chuyên nghiệp, cũng như áp dụng kiến thức lý thuyết vào thực tiễn. Thông qua các dự án thực tế, em đã phát triển kỹ năng lập trình, học cách quản lý thời gian và làm việc nhóm hiệu quả hơn, đồng thời cải thiện khả năng giao tiếp với đồng nghiệp và các bên liên quan.
+                  </li>
+                  <li>
+                      <b>Kỹ năng lập trình:</b> Em tự tin với khả năng lập trình của mình, đặc biệt là trong việc sử dụng Node.js và Express.js để phát triển các ứng dụng web hiệu quả. Bên cạnh đó, em có kinh nghiệm làm việc với MySQL và Sequelize trong việc quản lý cơ sở dữ liệu, cho phép em thiết kế và tối ưu hóa các truy vấn để nâng cao hiệu suất ứng dụng. Em cũng quen thuộc với các ngôn ngữ lập trình khác như Java, C++, Django và Python, điều này giúp em linh hoạt trong việc chọn lựa công nghệ phù hợp cho từng dự án. Qua đó, em luôn cố gắng cải thiện kỹ năng của mình thông qua việc tham gia các khóa học trực tuyến và thực hiện các dự án cá nhân.
+                  </li>
+                  <li>
+                      <b>Tin học văn phòng:</b> Em đã thành thạo bộ công cụ Microsoft Office, bao gồm Word, Excel và PowerPoint. Kỹ năng này không chỉ giúp em trong việc soạn thảo tài liệu, báo cáo và thuyết trình, mà còn hỗ trợ em trong việc phân tích dữ liệu và quản lý thông tin một cách hiệu quả. Em biết cách sử dụng các tính năng nâng cao trong Excel để thực hiện các phân tích số liệu và tạo bảng biểu, điều này rất hữu ích trong quá trình báo cáo và trình bày dự án cho giảng viên hoặc đồng nghiệp.
+                  </li>
+                  <li>
+                      <b>Kỹ năng mềm:</b> Bên cạnh các kỹ năng kỹ thuật, em cũng chú trọng phát triển các kỹ năng mềm như giao tiếp, làm việc nhóm và quản lý thời gian. Em đã học được cách giao tiếp hiệu quả với đồng nghiệp và khách hàng, cũng như làm việc nhóm để đạt được mục tiêu chung. Khả năng thích ứng nhanh chóng với môi trường làm việc và quản lý thời gian tốt giúp em hoàn thành công việc đúng hạn và đạt chất lượng cao.
+                  </li>
+                  <li>
+                      <b>Dự án nổi bật:</b> Trong thời gian thực tập, em đã tham gia vào một dự án xây dựng hệ thống quản lý bán hàng trực tuyến. Trong dự án này, em đã góp phần vào việc thiết kế giao diện người dùng thân thiện và dễ sử dụng, đồng thời phát triển backend để xử lý các yêu cầu từ người dùng. Dự án không chỉ giúp em cải thiện kỹ năng lập trình mà còn cho em cơ hội học hỏi về quy trình phát triển phần mềm, từ giai đoạn lên kế hoạch đến triển khai và bảo trì.
+                  </li>
+                  <li>
+                      <b>Chứng chỉ:</b> Em đã hoàn thành khóa học lập trình viên full-stack và nhận được chứng chỉ từ khóa học trực tuyến ABC. Khóa học đã cung cấp cho em những kiến thức vững chắc về cả frontend và backend, cùng với các công nghệ và công cụ hiện đại, giúp em tự tin hơn khi bước vào thị trường lao động.
+                  </li>                
+                </ul>
+            </div>
+            <div class="w3-third w3-container">
+                <a href="https://ctt.hust.edu.vn/DisplayWeb/DisplayKehoach?kehoach=25200" target="_blank">
+                    <img src="./ad-hocphi.jpg" alt="Quảng cáo 1" class="w3-padding-large w3-padding-32 w3-center"
+                        style="max-width: 100%; height: auto;" />
+                </a>
+                <a href="https://ctt.hust.edu.vn/Subservices?id=10" target="_blank">
+                    <img src="./ad-hust.jpg" alt="Quảng cáo 2" class="w3-padding-large w3-center"
+                        style="max-width: 100%; height: auto;" />
+                </a>
+            </div>
+        </div>
+
+        <div class="w3-row w3-padding-64" id="4">
+            <div class="w3-twothird w3-container">
+                <h1 class="w3-text-teal">Kinh nghiệm trong dự án</h1>
+                <ul>
+                  <li>
+                      <b>Website quản lý phòng khám bệnh:</b> Dự án này bao gồm việc phát triển một website đặt lịch khám bệnh, được xây dựng chủ yếu bằng JavaScript, HTML và CSS. Em đã thiết kế giao diện người dùng thân thiện và dễ sử dụng, giúp bệnh nhân có thể đặt lịch khám một cách nhanh chóng và thuận tiện. Ngoài ra, em cũng tích hợp các tính năng như thông báo xác nhận qua email, lưu trữ lịch sử khám bệnh, và quản lý thông tin bệnh nhân. Dự án này không chỉ giúp em củng cố kỹ năng lập trình web mà còn giúp em hiểu rõ hơn về cách mà công nghệ có thể cải thiện trải nghiệm của bệnh nhân trong ngành y tế.
+                  </li>
+                  <li>
+                      <b>Thu thập dữ liệu NFT:</b> Em đã thực hiện một dự án thu thập dữ liệu trên các sàn thương mại điện tử liên quan đến tiền điện tử và NFT bằng Java. Dự án này bao gồm việc phát triển các script tự động để thu thập thông tin về các giao dịch NFT, giá cả và xu hướng thị trường từ các nền tảng như OpenSea và Rarible. Qua đó, em đã học được cách xử lý dữ liệu lớn, phân tích và trực quan hóa thông tin để cung cấp những cái nhìn sâu sắc về thị trường NFT. Dự án này không chỉ giúp em nâng cao kỹ năng lập trình Java mà còn mở rộng hiểu biết của em về lĩnh vực tiền điện tử đang phát triển nhanh chóng.
+                  </li>
+                  <li>
+                      <b>Phân loại văn bản:</b> Em đã sử dụng mô hình BERT để huấn luyện một mô hình phân loại văn bản có giám sát. Dự án này bao gồm việc thu thập dữ liệu văn bản từ nhiều nguồn khác nhau, tiền xử lý và phân tích dữ liệu để tạo ra các nhãn cho mô hình. Sau đó, em đã triển khai mô hình BERT để thực hiện tác vụ phân loại, giúp xác định chủ đề của các đoạn văn bản một cách chính xác. Thông qua dự án này, em đã nắm vững cách áp dụng học sâu vào xử lý ngôn ngữ tự nhiên (NLP) và có thêm kinh nghiệm trong việc làm việc với các mô hình AI hiện đại.
+                  </li>
+              </ul>
+            </div>
+            <div class="w3-third w3-container">
+                <a href="https://ctt.hust.edu.vn/DisplayWeb/DisplayKehoach?kehoach=25200" target="_blank">
+                    <img src="./ad-hocphi.jpg" alt="Quảng cáo 1" class="w3-padding-large w3-padding-32 w3-center"
+                        style="max-width: 100%; height: auto;" />
+                </a>
+                <a href="https://ctt.hust.edu.vn/Subservices?id=10" target="_blank">
+                    <img src="./ad-hust.jpg" alt="Quảng cáo 2" class="w3-padding-large w3-center"
+                        style="max-width: 100%; height: auto;" />
+                </a>
+            </div>
+        </div>
+
+  
+        <!-- Include footer -->
+        <div w3-include-html="footer.html"></div>
+
+        <!-- END MAIN -->
+    </div>
+
+
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+<script>
+  w3.includeHTML();
+</script>
+
+</body>
+</html>
