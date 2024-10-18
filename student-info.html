@@ -15,14 +15,7 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
   />
   <style>
-    html,
-    body,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
+    html, body, h1, h2, h3, h4, h5, h6 {
       font-family: "Roboto", sans-serif;
     }
 
@@ -32,6 +25,25 @@
       top: 43px;
       bottom: 0;
       height: inherit;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      color: #0770a8; 
+    }
+
+    .w3-bar, .w3-sidebar {
+      background-color: #0770a8; 
+    }
+
+    .w3-sidebar a {
+      color: #454545 !important;
+    }
+
+    .w3-bar a {
+      color: #ffffff !important;
+    }
+
+    .w3-bar a:hover, .w3-sidebar a:hover {
+      background-color: #0770a8 !important; 
     }
   </style>
 </head>
@@ -109,17 +121,20 @@
         <div class="w3-row w3-padding-64" id="1">
             <div class="w3-twothird w3-container">
                 <h1 class="w3-text-teal">Thông tin cá nhân</h1>
-                <div style="display: flex; align-items: center;">
-                  <p><b>Họ tên:</b> Hoàng Đức Gia Hưng</p>
-                  <img src="profile-photo.jpg" alt="Ảnh thẻ cá nhân" style="width: 100px; height: auto; margin-left: 100px;" />
-                </div>
-                <p><b>Mã số sinh viên:</b> 20215062</p>
-                <p><b>Email:</b> hung.hdg215062@sis.hust.edu.vn</p>
-                <p><b>Số điện thoại:</b> 0917727036</p>
-                <p><b>Địa chỉ:</b> Mai Dịch, Cầu Giấy, Hà Nội</p>
-                <p><b>Chuyên ngành:</b> Công nghệ Thông tin Việt Nhật</p>
+                <div style="display: flex; align-items: center; margin-bottom: 20px;">
+                  <img src="profile-photo.jpg" alt="Ảnh thẻ cá nhân" style="width: 200px; height: auto; margin-right: 20px;" />
+                  <div>
+                    <p><b>Họ tên:</b> Hoàng Đức Gia Hưng</p>        
+                    <p><b>Email:</b> hung.hdg215062@sis.hust.edu.vn</p>
+                    <p><b>Số điện thoại:</b> 0917727036</p>
+                    <p><b>Địa chỉ:</b> Mai Dịch, Cầu Giấy, Hà Nội</p>
+                  </div>
+                </div>     
                 <p><b>Trường đại học:</b> Đại học Bách Khoa Hà Nội</p>
-                <p><b>Sở thích:</b> Đọc sách, lập trình, và khám phá công nghệ mới.</p>
+                <p><b>Chuyên ngành:</b> Công nghệ Thông tin Việt Nhật</p>
+                <p><b>Mã số sinh viên:</b> 20215062</p>
+                <p><b>Sở thích:</b> Em rất thích đọc sách, đặc biệt là những cuốn sách về khoa học, công nghệ và văn học. Đọc sách không chỉ giúp em mở mang kiến thức mà còn mang lại những trải nghiệm thú vị và cảm hứng sáng tạo. Ngoài ra, lập trình cũng là một trong những sở thích lớn của em. Em thường dành thời gian để học hỏi các ngôn ngữ lập trình mới và phát triển các dự án nhỏ, điều này không chỉ giúp em nâng cao kỹ năng mà còn thỏa mãn đam mê khám phá công nghệ. Cuối cùng, em rất thích khám phá công nghệ mới, từ các thiết bị điện tử tiên tiến đến những xu hướng mới trong lĩnh vực công nghệ thông tin. Em thường tham gia các hội thảo, sự kiện công nghệ và theo dõi các tin tức để cập nhật những điều mới mẻ và sáng tạo trong lĩnh vực này.</p>
+
             </div>
             <div class="w3-third w3-container">
                 <a href="https://ctt.hust.edu.vn/DisplayWeb/DisplayKehoach?kehoach=25200" target="_blank">
@@ -219,12 +234,25 @@
         </div>
 
   
-        <!-- Include footer -->
-        <div w3-include-html="footer.html"></div>
+        <!-- Footer -->
+        <footer id="myFooter">
+          <div class="w3-container w3-theme-l2 w3-padding-32 w3-center">
+            <p>Contact Us</p>
+            <p>Email: hung.hdg215062@sis.hust.edu.vn</p>
+            <p>Phone: 0917727936</p>
+          </div>
+          <div class="w3-container w3-theme-l1 w3-padding-16">
+            <p>
+              Powered by
+              <a href="https://www.w3schools.com/w3css/default.asp" target="_blank"
+                >w3.css</a
+              >
+            </p>
+          </div>
+        </footer>
 
         <!-- END MAIN -->
     </div>
-
 
 <script src="https://www.w3schools.com/lib/w3.js"></script>
 <script>

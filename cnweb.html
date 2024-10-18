@@ -15,14 +15,7 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
   />
   <style>
-    html,
-    body,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
+    html, body, h1, h2, h3, h4, h5, h6 {
       font-family: "Roboto", sans-serif;
     }
 
@@ -32,6 +25,26 @@
       top: 43px;
       bottom: 0;
       height: inherit;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      color: #0770a8; 
+    }
+
+    .w3-bar, .w3-sidebar {
+      background-color: #0770a8; 
+    }
+
+    .w3-sidebar a {
+      color: #454545 !important;
+    }
+
+    .w3-bar a {
+      color: #ffffff !important;
+    }
+
+    .w3-bar a:hover, .w3-sidebar a:hover {
+      background-color: #0770a8 !important; 
     }
   </style>
 </head>
@@ -174,8 +187,22 @@
         </div>
 
   
-        <!-- Include footer -->
-        <div w3-include-html="footer.html"></div>
+        <!-- Footer -->
+        <footer id="myFooter">
+          <div class="w3-container w3-theme-l2 w3-padding-32 w3-center">
+            <p>Contact Us</p>
+            <p>Email: hung.hdg215062@sis.hust.edu.vn</p>
+            <p>Phone: 0917727936</p>
+          </div>
+          <div class="w3-container w3-theme-l1 w3-padding-16">
+            <p>
+              Powered by
+              <a href="https://www.w3schools.com/w3css/default.asp" target="_blank"
+                >w3.css</a
+              >
+            </p>
+          </div>
+        </footer>
 
         <!-- END MAIN -->
     </div>
